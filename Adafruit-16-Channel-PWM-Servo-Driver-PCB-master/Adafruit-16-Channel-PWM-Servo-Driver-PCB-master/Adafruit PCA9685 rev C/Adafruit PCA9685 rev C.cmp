@@ -1,0 +1,323 @@
+Cmp-Mod V01 Created by PcbNew   date = 1/19/2019 7:29:26 PM
+
+BeginCmp
+TimeStamp = 5C43DD0B
+Path = /177CC1DA
+Reference = U1;
+ValeurCmp = PCA9685;
+IdModule  = Adafruit PCA9685 rev C:TSSOP28;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DD4B
+Path = /FD009E75
+Reference = SJ_A0;
+ValeurCmp = SOLDERJUMPERREFLOW_NOPASTE;
+IdModule  = Adafruit PCA9685 rev C:SOLDERJUMPER_REFLOW_NOPASTE;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DD5D
+Path = /FFA2DE7A
+Reference = SJ_A1;
+ValeurCmp = SOLDERJUMPERREFLOW_NOPASTE;
+IdModule  = Adafruit PCA9685 rev C:SOLDERJUMPER_REFLOW_NOPASTE;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DD6F
+Path = /FD3C695B
+Reference = SJ_A2;
+ValeurCmp = SOLDERJUMPERREFLOW_NOPASTE;
+IdModule  = Adafruit PCA9685 rev C:SOLDERJUMPER_REFLOW_NOPASTE;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DD81
+Path = /36763CCB
+Reference = SJ_A3;
+ValeurCmp = SOLDERJUMPERREFLOW_NOPASTE;
+IdModule  = Adafruit PCA9685 rev C:SOLDERJUMPER_REFLOW_NOPASTE;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DD93
+Path = /8AB138F2
+Reference = SJ_A4;
+ValeurCmp = SOLDERJUMPERREFLOW_NOPASTE;
+IdModule  = Adafruit PCA9685 rev C:SOLDERJUMPER_REFLOW_NOPASTE;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DDA5
+Path = /0D89AE5C
+Reference = SJ_A5;
+ValeurCmp = SOLDERJUMPERREFLOW_NOPASTE;
+IdModule  = Adafruit PCA9685 rev C:SOLDERJUMPER_REFLOW_NOPASTE;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DDB7
+Path = /E7D47EA7
+Reference = C1;
+ValeurCmp = 10uF;
+IdModule  = Adafruit PCA9685 rev C:0805-NO;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DDC1
+Path = /6C198247
+Reference = R7;
+ValeurCmp = 10K;
+IdModule  = Adafruit PCA9685 rev C:0805-NO;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DDCB
+Path = /449C7C68
+Reference = J1;
+ValeurCmp = TERMBLOCK_1X2;
+IdModule  = Adafruit PCA9685 rev C:TERMBLOCK_1X2-3.5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DDD7
+Path = /71FDE089
+Reference = U$47;
+ValeurCmp = MOUNTINGHOLE2.5;
+IdModule  = Adafruit PCA9685 rev C:MOUNTINGHOLE_2.5_PLATED;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DDE0
+Path = /15650906
+Reference = U$48;
+ValeurCmp = MOUNTINGHOLE2.5;
+IdModule  = Adafruit PCA9685 rev C:MOUNTINGHOLE_2.5_PLATED;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DDE9
+Path = /F6E78796
+Reference = U$49;
+ValeurCmp = MOUNTINGHOLE2.5;
+IdModule  = Adafruit PCA9685 rev C:MOUNTINGHOLE_2.5_PLATED;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DDF2
+Path = /1C85CEBD
+Reference = U$50;
+ValeurCmp = MOUNTINGHOLE2.5;
+IdModule  = Adafruit PCA9685 rev C:MOUNTINGHOLE_2.5_PLATED;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DDFB
+Path = /57AF2ED6
+Reference = FID1;
+ValeurCmp = FIDUCIAL"";
+IdModule  = Adafruit PCA9685 rev C:FIDUCIAL_1MM;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DE0B
+Path = /AD69ACBC
+Reference = FID2;
+ValeurCmp = FIDUCIAL"";
+IdModule  = Adafruit PCA9685 rev C:FIDUCIAL_1MM;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DE1B
+Path = /433596B3
+Reference = Q1;
+ValeurCmp = AOD417;
+IdModule  = Adafruit PCA9685 rev C:TO252;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DE2F
+Path = /F4E680D5
+Reference = LED1;
+ValeurCmp = GREEN;
+IdModule  = Adafruit PCA9685 rev C:CHIPLED_0805_NOOUTLINE;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DE48
+Path = /1BAF28D4
+Reference = R10;
+ValeurCmp = 470;
+IdModule  = Adafruit PCA9685 rev C:_0805MP;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DE53
+Path = /4071D1F9
+Reference = C2;
+ValeurCmp = CPOL-USE3.5-8;
+IdModule  = Adafruit PCA9685 rev C:E3,5-8;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43DE63
+Path = 
+Reference = U$51;
+ValeurCmp = [NoVal];
+IdModule  = Adafruit PCA9685 rev C:ADAFRUIT_5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E30D
+Path = /8182258E
+Reference = JP3;
+ValeurCmp = PINHD-1X6CB;
+IdModule  = Adafruit PCA9685 rev C:1X06-CLEANBIG;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E31C
+Path = /193933AB
+Reference = JP4;
+ValeurCmp = PINHD-1X6CB;
+IdModule  = Adafruit PCA9685 rev C:1X06-CLEANBIG;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E32B
+Path = /0B60073D
+Reference = JP1;
+ValeurCmp = HEADER-3X04;
+IdModule  = Adafruit PCA9685 rev C:3X04;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E363
+Path = /BAFA783C
+Reference = JP2;
+ValeurCmp = HEADER-3X04;
+IdModule  = Adafruit PCA9685 rev C:3X04;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E39B
+Path = /056852D9
+Reference = JP5;
+ValeurCmp = HEADER-3X04;
+IdModule  = Adafruit PCA9685 rev C:3X04;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E3D3
+Path = /A21E5090
+Reference = JP6;
+ValeurCmp = HEADER-3X04;
+IdModule  = Adafruit PCA9685 rev C:3X04;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E40B
+Path = /CDFF27F1
+Reference = R11;
+ValeurCmp = 220;
+IdModule  = Adafruit PCA9685 rev C:RESPACK_4X0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E421
+Path = /02A13CBA
+Reference = R12;
+ValeurCmp = 220;
+IdModule  = Adafruit PCA9685 rev C:RESPACK_4X0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E437
+Path = /ADE66388
+Reference = R13;
+ValeurCmp = 220;
+IdModule  = Adafruit PCA9685 rev C:RESPACK_4X0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E44D
+Path = /A27680AC
+Reference = R14;
+ValeurCmp = 220;
+IdModule  = Adafruit PCA9685 rev C:RESPACK_4X0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E463
+Path = /DE04AF3C
+Reference = R1;
+ValeurCmp = 10K;
+IdModule  = Adafruit PCA9685 rev C:RESPACK_4X0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E479
+Path = /0F3C4881
+Reference = R2;
+ValeurCmp = 10K;
+IdModule  = Adafruit PCA9685 rev C:RESPACK_4X0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E48F
+Path = 
+Reference = U$54;
+ValeurCmp = [NoVal];
+IdModule  = Adafruit PCA9685 rev C:PCBFEAT-REV-040;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E494
+Path = /FE5B29FD
+Reference = TP1;
+ValeurCmp = TESTPOINTROUND1MM;
+IdModule  = Adafruit PCA9685 rev C:TESTPOINT_ROUND_1MM;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E499
+Path = /5A8AD4FA
+Reference = TP2;
+ValeurCmp = TESTPOINTROUND1MM;
+IdModule  = Adafruit PCA9685 rev C:TESTPOINT_ROUND_1MM;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E49E
+Path = /FC32B447
+Reference = TP3;
+ValeurCmp = TESTPOINTROUND1MM;
+IdModule  = Adafruit PCA9685 rev C:TESTPOINT_ROUND_1MM;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E4A3
+Path = /EE0F8A81
+Reference = TP4;
+ValeurCmp = TESTPOINTROUND1MM;
+IdModule  = Adafruit PCA9685 rev C:TESTPOINT_ROUND_1MM;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E4A8
+Path = /E859B48A
+Reference = TP5;
+ValeurCmp = TESTPOINTROUND1MM;
+IdModule  = Adafruit PCA9685 rev C:TESTPOINT_ROUND_1MM;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C43E4AD
+Path = /D576C4E2
+Reference = TP6;
+ValeurCmp = TESTPOINTROUND1MM;
+IdModule  = Adafruit PCA9685 rev C:TESTPOINT_ROUND_1MM;
+EndCmp
+
+EndListe

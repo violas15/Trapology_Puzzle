@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Adafruit_PCA9685_rev_C-eagle-import)(type Legacy)(uri ${KIPRJMOD}/Adafruit_PCA9685_rev_C-eagle-import.lib)(options "")(descr ""))
+)

@@ -19,7 +19,7 @@
 #define RFID1ANSWER "FDCDD183"
 
 #define RFID2 34
-#define RFID2IDX 290
+#define RFID2IDX 2
 #define RFID2ANSWER "36B77AF7"
 
 #define RFID3 35
@@ -77,7 +77,7 @@
 //*********************************************************************************
 
 //Button Setup*********************************************************************
-#define BTNDIAL 24 //white //should be wired one end to positive and the other to the correct pin
+#define BTNDIAL 24 //white //should be wired one end to gnd and the other to the correct pin
 #define BTNDIALLIGHT 25
 
 #define BTNRED 17

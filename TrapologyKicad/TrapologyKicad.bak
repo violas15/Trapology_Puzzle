@@ -1,0 +1,1665 @@
+EESchema Schematic File Version 4
+LIBS:TrapologyKicad-cache
+LIBS:Adafruit PCA9685 rev C-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L teensy:Teensy3.6 U1
+U 1 1 5C43A689
+P 2250 3800
+F 0 "U1" H 2250 6187 60  0000 C CNN
+F 1 "Teensy3.6" H 2250 6081 60  0000 C CNN
+F 2 "teensy:Teensy35_36" H 2250 3800 60  0001 C CNN
+F 3 "" H 2250 3800 60  0000 C CNN
+	1    2250 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 5700 0    50   Input ~ 0
+RFIDSCLK
+Text GLabel 1250 2600 0    50   Input ~ 0
+RFIDMISO
+Text GLabel 1250 2500 0    50   Input ~ 0
+RFIDMOSI
+Text GLabel -1250 2300 0    50   Input ~ 0
+RFIDRESET
+Text GLabel 1250 2300 0    50   Input ~ 0
+RFID1
+Text GLabel 1250 5800 0    50   Input ~ 0
+RFID2
+Text GLabel 1250 4900 0    50   Input ~ 0
+RFID3
+Text GLabel 1250 3600 0    50   Input ~ 0
+RFID4
+Text GLabel 5700 4050 2    50   Input ~ 0
+SCALEMOUTHLOCK
+Text GLabel 5700 4350 2    50   Input ~ 0
+VOICEMOUTHLOCK
+Text GLabel 5700 4850 2    50   Input ~ 0
+EYEMOUTHLOCK
+Text GLabel 5700 5250 2    50   Input ~ 0
+NOSELOCK
+Text GLabel 5700 5350 2    50   Input ~ 0
+HEADLOCKS
+Text GLabel 5700 3950 2    50   Input ~ 0
+DIALLOCK1
+Text GLabel 5700 4150 2    50   Input ~ 0
+PRIZELOCK
+Text GLabel -1200 2650 0    50   Input ~ 0
+OUTERHALL
+Text GLabel -1300 2500 0    50   Input ~ 0
+MIDHALL
+Text GLabel -1150 2800 0    50   Input ~ 0
+INNERHALL
+Text GLabel 1250 5300 0    50   Input ~ 0
+EYE1
+Text GLabel 1250 5400 0    50   Input ~ 0
+EYE2
+Text GLabel 1250 2800 0    50   Input ~ 0
+VOICETX
+Text GLabel 1250 2700 0    50   Input ~ 0
+VOICERX
+Text GLabel 1250 2200 0    50   Input ~ 0
+SCALE1MOTOR
+Text GLabel 1250 2000 0    50   Input ~ 0
+SCALE2MOTOR
+Text GLabel 1250 4000 0    50   Input ~ 0
+SCALE1POT
+Text GLabel 3250 5100 2    50   Input ~ 0
+ANALOGGND
+Text GLabel 1250 3500 0    50   Input ~ 0
+BTNDIAL
+Text GLabel 1250 3400 0    50   Input ~ 0
+BTNDIALLIGHT
+Text GLabel 1250 3800 0    50   Input ~ 0
+BTNRED
+Text GLabel 1250 3700 0    50   Input ~ 0
+BTNREDLIGHT
+Text GLabel 3250 5900 2    50   Input ~ 0
+BTNBLUE
+Text GLabel 1250 5900 0    50   Input ~ 0
+BTNBLUELIGHT
+Text GLabel 3250 5400 2    50   Input ~ 0
+BTNGREEN
+Text GLabel 3250 5300 2    50   Input ~ 0
+BTNGREENLIGHT
+Text GLabel 1250 5100 0    50   Input ~ 0
+BTNYELLOW
+Text GLabel 1250 5200 0    50   Input ~ 0
+BTNYELLOWLIGHT
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5C447C94
+P 1250 3100
+F 0 "#PWR0101" H 1250 2950 50  0001 C CNN
+F 1 "+3.3V" V 1265 3228 50  0000 L CNN
+F 2 "" H 1250 3100 50  0001 C CNN
+F 3 "" H 1250 3100 50  0001 C CNN
+	1    1250 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5C447E12
+P 1250 1700
+F 0 "#PWR0102" H 1250 1450 50  0001 C CNN
+F 1 "GND" V 1255 1572 50  0000 R CNN
+F 2 "" H 1250 1700 50  0001 C CNN
+F 3 "" H 1250 1700 50  0001 C CNN
+	1    1250 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push_Open_Dual SW1
+U 1 1 5C44871E
+P 3600 400
+F 0 "SW1" H 3600 610 50  0000 C CNN
+F 1 "WhiteBtn" H 3600 519 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3600 600 50  0001 C CNN
+F 3 "" H 3600 600 50  0001 C CNN
+	1    3600 400 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Open_Dual SW4
+U 1 1 5C448808
+P 7650 350
+F 0 "SW4" H 7650 560 50  0000 C CNN
+F 1 "RedBtn" H 7650 469 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 7650 550 50  0001 C CNN
+F 3 "" H 7650 550 50  0001 C CNN
+	1    7650 350 
+	1    0    0    -1  
+$EndComp
+Text GLabel 3400 600  0    50   Input ~ 0
+BTNDIALLIGHT
+Text GLabel 3400 400  0    50   Input ~ 0
+BTNDIAL
+$Comp
+L power:GND #PWR0103
+U 1 1 5C44969B
+P 3800 400
+F 0 "#PWR0103" H 3800 150 50  0001 C CNN
+F 1 "GND" V 3805 272 50  0000 R CNN
+F 2 "" H 3800 400 50  0001 C CNN
+F 3 "" H 3800 400 50  0001 C CNN
+	1    3800 400 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5C4496E7
+P 3800 600
+F 0 "#PWR0104" H 3800 350 50  0001 C CNN
+F 1 "GND" V 3805 472 50  0000 R CNN
+F 2 "" H 3800 600 50  0001 C CNN
+F 3 "" H 3800 600 50  0001 C CNN
+	1    3800 600 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_Open_Dual SW2
+U 1 1 5C449B94
+P 4950 400
+F 0 "SW2" H 4950 610 50  0000 C CNN
+F 1 "GreenBtn" H 4950 519 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4950 600 50  0001 C CNN
+F 3 "" H 4950 600 50  0001 C CNN
+	1    4950 400 
+	1    0    0    -1  
+$EndComp
+Text GLabel 4750 600  0    50   Input ~ 0
+BTNGREENLIGHT
+Text GLabel 4750 400  0    50   Input ~ 0
+BTNGREEN
+$Comp
+L power:GND #PWR0105
+U 1 1 5C449B9D
+P 5150 400
+F 0 "#PWR0105" H 5150 150 50  0001 C CNN
+F 1 "GND" V 5155 272 50  0000 R CNN
+F 2 "" H 5150 400 50  0001 C CNN
+F 3 "" H 5150 400 50  0001 C CNN
+	1    5150 400 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5C449BA3
+P 5150 600
+F 0 "#PWR0106" H 5150 350 50  0001 C CNN
+F 1 "GND" V 5155 472 50  0000 R CNN
+F 2 "" H 5150 600 50  0001 C CNN
+F 3 "" H 5150 600 50  0001 C CNN
+	1    5150 600 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_Open_Dual SW3
+U 1 1 5C449C0F
+P 6400 400
+F 0 "SW3" H 6400 610 50  0000 C CNN
+F 1 "BlueBtn" H 6400 519 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6400 600 50  0001 C CNN
+F 3 "" H 6400 600 50  0001 C CNN
+	1    6400 400 
+	1    0    0    -1  
+$EndComp
+Text GLabel 6200 600  0    50   Input ~ 0
+BTNBLUELIGHT
+Text GLabel 6200 400  0    50   Input ~ 0
+BTNBLUE
+$Comp
+L power:GND #PWR0107
+U 1 1 5C449C18
+P 6600 400
+F 0 "#PWR0107" H 6600 150 50  0001 C CNN
+F 1 "GND" V 6605 272 50  0000 R CNN
+F 2 "" H 6600 400 50  0001 C CNN
+F 3 "" H 6600 400 50  0001 C CNN
+	1    6600 400 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5C449C1E
+P 6600 600
+F 0 "#PWR0108" H 6600 350 50  0001 C CNN
+F 1 "GND" V 6605 472 50  0000 R CNN
+F 2 "" H 6600 600 50  0001 C CNN
+F 3 "" H 6600 600 50  0001 C CNN
+	1    6600 600 
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7450 350  0    50   Input ~ 0
+BTNRED
+$Comp
+L power:GND #PWR0109
+U 1 1 5C449F3F
+P 7850 350
+F 0 "#PWR0109" H 7850 100 50  0001 C CNN
+F 1 "GND" V 7855 222 50  0000 R CNN
+F 2 "" H 7850 350 50  0001 C CNN
+F 3 "" H 7850 350 50  0001 C CNN
+	1    7850 350 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:IRLB8721PBF Q1
+U 1 1 5C44A18E
+P 7650 1050
+F 0 "Q1" V 7900 1050 50  0000 C CNN
+F 1 "IRLB8721PBF" V 7991 1050 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7900 975 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591" H 7650 1050 50  0001 L CNN
+	1    7650 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0110
+U 1 1 5C44B0B5
+P 7450 550
+F 0 "#PWR0110" H 7450 400 50  0001 C CNN
+F 1 "+5V" V 7465 678 50  0000 L CNN
+F 2 "" H 7450 550 50  0001 C CNN
+F 3 "" H 7450 550 50  0001 C CNN
+	1    7450 550 
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7650 850  0    50   Input ~ 0
+BTNREDLIGHT
+Wire Wire Line
+	7850 550  7850 1150
+$Comp
+L power:GND #PWR0111
+U 1 1 5C44B117
+P 7450 1150
+F 0 "#PWR0111" H 7450 900 50  0001 C CNN
+F 1 "GND" V 7455 1022 50  0000 R CNN
+F 2 "" H 7450 1150 50  0001 C CNN
+F 3 "" H 7450 1150 50  0001 C CNN
+	1    7450 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push_Open_Dual SW5
+U 1 1 5C44B203
+P 9000 350
+F 0 "SW5" H 9000 560 50  0000 C CNN
+F 1 "YellowBtn" H 9000 469 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9000 550 50  0001 C CNN
+F 3 "" H 9000 550 50  0001 C CNN
+	1    9000 350 
+	1    0    0    -1  
+$EndComp
+Text GLabel 8800 350  0    50   Input ~ 0
+BTNYELLOW
+$Comp
+L power:GND #PWR0112
+U 1 1 5C44B20B
+P 9200 350
+F 0 "#PWR0112" H 9200 100 50  0001 C CNN
+F 1 "GND" V 9205 222 50  0000 R CNN
+F 2 "" H 9200 350 50  0001 C CNN
+F 3 "" H 9200 350 50  0001 C CNN
+	1    9200 350 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:IRLB8721PBF Q2
+U 1 1 5C44B211
+P 9000 1050
+F 0 "Q2" V 9250 1050 50  0000 C CNN
+F 1 "IRLB8721PBF" V 9341 1050 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9250 975 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591" H 9000 1050 50  0001 L CNN
+	1    9000 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0113
+U 1 1 5C44B218
+P 8800 550
+F 0 "#PWR0113" H 8800 400 50  0001 C CNN
+F 1 "+5V" V 8815 678 50  0000 L CNN
+F 2 "" H 8800 550 50  0001 C CNN
+F 3 "" H 8800 550 50  0001 C CNN
+	1    8800 550 
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9000 850  0    50   Input ~ 0
+BTNYELLOWLIGHT
+Wire Wire Line
+	9200 550  9200 1150
+$Comp
+L power:GND #PWR0114
+U 1 1 5C44B220
+P 8800 1150
+F 0 "#PWR0114" H 8800 900 50  0001 C CNN
+F 1 "GND" V 8805 1022 50  0000 R CNN
+F 2 "" H 8800 1150 50  0001 C CNN
+F 3 "" H 8800 1150 50  0001 C CNN
+	1    8800 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L rfid-rc522-module:RFID-RC522-MODULE P1
+U 1 1 5C44C7DA
+P 4450 1950
+F 0 "P1" H 5078 1872 60  0000 L CNN
+F 1 "RFID-RC522-MODULE 1" H 3900 2300 60  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 4450 1950 60  0001 C CNN
+F 3 "" H 4450 1950 60  0000 C CNN
+	1    4450 1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 4050 2500 3    50   Input ~ 0
+RFIDSCLK
+Text GLabel 4200 2500 3    50   Input ~ 0
+RFIDMOSI
+Text GLabel 4350 2500 3    50   Input ~ 0
+RFIDMISO
+Text GLabel 4800 2500 3    50   Input ~ 0
+RFIDRESET
+Text GLabel 3900 2500 3    50   Input ~ 0
+RFID1
+NoConn ~ 4500 2500
+$Comp
+L power:GND #PWR0115
+U 1 1 5C44E7D5
+P 4650 2500
+F 0 "#PWR0115" H 4650 2250 50  0001 C CNN
+F 1 "GND" H 4655 2327 50  0000 C CNN
+F 2 "" H 4650 2500 50  0001 C CNN
+F 3 "" H 4650 2500 50  0001 C CNN
+	1    4650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0116
+U 1 1 5C44E827
+P 4950 2500
+F 0 "#PWR0116" H 4950 2350 50  0001 C CNN
+F 1 "+3.3V" H 4965 2673 50  0000 C CNN
+F 2 "" H 4950 2500 50  0001 C CNN
+F 3 "" H 4950 2500 50  0001 C CNN
+	1    4950 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L rfid-rc522-module:RFID-RC522-MODULE P3
+U 1 1 5C44EBAB
+P 5900 1950
+F 0 "P3" H 6528 1872 60  0000 L CNN
+F 1 "RFID-RC522-MODULE 2" H 5350 2300 60  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 5900 1950 60  0001 C CNN
+F 3 "" H 5900 1950 60  0000 C CNN
+	1    5900 1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 5500 2500 3    50   Input ~ 0
+RFIDSCLK
+Text GLabel 5650 2500 3    50   Input ~ 0
+RFIDMOSI
+Text GLabel 5800 2500 3    50   Input ~ 0
+RFIDMISO
+Text GLabel 6250 2500 3    50   Input ~ 0
+RFIDRESET
+Text GLabel 5350 2500 3    50   Input ~ 0
+RFID2
+NoConn ~ 5950 2500
+$Comp
+L power:GND #PWR0117
+U 1 1 5C44EBB8
+P 6100 2500
+F 0 "#PWR0117" H 6100 2250 50  0001 C CNN
+F 1 "GND" H 6105 2327 50  0000 C CNN
+F 2 "" H 6100 2500 50  0001 C CNN
+F 3 "" H 6100 2500 50  0001 C CNN
+	1    6100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0118
+U 1 1 5C44EBBE
+P 6400 2500
+F 0 "#PWR0118" H 6400 2350 50  0001 C CNN
+F 1 "+3.3V" H 6415 2673 50  0000 C CNN
+F 2 "" H 6400 2500 50  0001 C CNN
+F 3 "" H 6400 2500 50  0001 C CNN
+	1    6400 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L rfid-rc522-module:RFID-RC522-MODULE P4
+U 1 1 5C44EBED
+P 7350 1950
+F 0 "P4" H 7978 1872 60  0000 L CNN
+F 1 "RFID-RC522-MODULE 3" H 6800 2300 60  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 7350 1950 60  0001 C CNN
+F 3 "" H 7350 1950 60  0000 C CNN
+	1    7350 1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 6950 2500 3    50   Input ~ 0
+RFIDSCLK
+Text GLabel 7100 2500 3    50   Input ~ 0
+RFIDMOSI
+Text GLabel 7250 2500 3    50   Input ~ 0
+RFIDMISO
+Text GLabel 7700 2500 3    50   Input ~ 0
+RFIDRESET
+Text GLabel 6800 2500 3    50   Input ~ 0
+RFID3
+NoConn ~ 7400 2500
+$Comp
+L power:GND #PWR0119
+U 1 1 5C44EBFA
+P 7550 2500
+F 0 "#PWR0119" H 7550 2250 50  0001 C CNN
+F 1 "GND" H 7555 2327 50  0000 C CNN
+F 2 "" H 7550 2500 50  0001 C CNN
+F 3 "" H 7550 2500 50  0001 C CNN
+	1    7550 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0120
+U 1 1 5C44EC00
+P 7850 2500
+F 0 "#PWR0120" H 7850 2350 50  0001 C CNN
+F 1 "+3.3V" H 7865 2673 50  0000 C CNN
+F 2 "" H 7850 2500 50  0001 C CNN
+F 3 "" H 7850 2500 50  0001 C CNN
+	1    7850 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L rfid-rc522-module:RFID-RC522-MODULE P5
+U 1 1 5C44EEF2
+P 8800 1950
+F 0 "P5" H 9428 1872 60  0000 L CNN
+F 1 "RFID-RC522-MODULE 4" H 8250 2300 60  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 8800 1950 60  0001 C CNN
+F 3 "" H 8800 1950 60  0000 C CNN
+	1    8800 1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 8400 2500 3    50   Input ~ 0
+RFIDSCLK
+Text GLabel 8550 2500 3    50   Input ~ 0
+RFIDMOSI
+Text GLabel 8700 2500 3    50   Input ~ 0
+RFIDMISO
+Text GLabel 9150 2500 3    50   Input ~ 0
+RFIDRESET
+Text GLabel 8250 2500 3    50   Input ~ 0
+RFID4
+NoConn ~ 8850 2500
+$Comp
+L power:GND #PWR0121
+U 1 1 5C44EEFF
+P 9000 2500
+F 0 "#PWR0121" H 9000 2250 50  0001 C CNN
+F 1 "GND" H 9005 2327 50  0000 C CNN
+F 2 "" H 9000 2500 50  0001 C CNN
+F 3 "" H 9000 2500 50  0001 C CNN
+	1    9000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0122
+U 1 1 5C44EF05
+P 9300 2500
+F 0 "#PWR0122" H 9300 2350 50  0001 C CNN
+F 1 "+3.3V" H 9315 2673 50  0000 C CNN
+F 2 "" H 9300 2500 50  0001 C CNN
+F 3 "" H 9300 2500 50  0001 C CNN
+	1    9300 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0101
+U 1 1 5C48DC55
+P 4100 5550
+F 0 "#U0101" H 4150 5600 50  0001 C CNN
+F 1 "GND" H 4178 5586 42  0000 L CNN
+F 2 "" H 4100 5550 50  0001 C CNN
+F 3 "" H 4100 5550 50  0001 C CNN
+	1    4100 5550
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 5700 2    50   Input ~ 0
+I2CSCL
+Text GLabel 3250 5800 2    50   Input ~ 0
+I2CSDA
+Text GLabel 4100 4250 0    50   Input ~ 0
+I2CSCL
+Text GLabel 4100 4150 0    50   Input ~ 0
+I2CSDA
+$Comp
+L power:+3.3V #PWR0123
+U 1 1 5C490433
+P 4100 3950
+F 0 "#PWR0123" H 4100 3800 50  0001 C CNN
+F 1 "+3.3V" V 4115 4078 50  0000 L CNN
+F 2 "" H 4100 3950 50  0001 C CNN
+F 3 "" H 4100 3950 50  0001 C CNN
+	1    4100 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Motor:Motor_Servo M1
+U 1 1 5C49050E
+P 7300 3350
+F 0 "M1" H 7632 3415 50  0000 L CNN
+F 1 "PrizeServo" H 7632 3324 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7300 3160 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 7300 3160 50  0001 C CNN
+	1    7300 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 7000 3250 0    50   Input ~ 0
+PRIZELOCK
+Text GLabel 7000 3350 0    50   Input ~ 0
+SERVOPWR
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0102
+U 1 1 5C4908A7
+P 7000 3550
+F 0 "#U0102" H 7050 3600 50  0001 C CNN
+F 1 "GND" H 7078 3586 42  0000 L CNN
+F 2 "" H 7000 3550 50  0001 C CNN
+F 3 "" H 7000 3550 50  0001 C CNN
+	1    7000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M2
+U 1 1 5C49097B
+P 7300 3800
+F 0 "M2" H 7631 3865 50  0000 L CNN
+F 1 "HEADSERVO1" H 7631 3774 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7300 3610 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 7300 3610 50  0001 C CNN
+	1    7300 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 7000 3700 0    50   Input ~ 0
+HEADLOCKS
+Text GLabel 7000 3800 0    50   Input ~ 0
+SERVOPWR
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0103
+U 1 1 5C490984
+P 7000 4000
+F 0 "#U0103" H 7050 4050 50  0001 C CNN
+F 1 "GND" H 7078 4036 42  0000 L CNN
+F 2 "" H 7000 4000 50  0001 C CNN
+F 3 "" H 7000 4000 50  0001 C CNN
+	1    7000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M3
+U 1 1 5C4909AE
+P 7300 4300
+F 0 "M3" H 7632 4365 50  0000 L CNN
+F 1 "NoseMouthServo" H 7632 4274 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7300 4110 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 7300 4110 50  0001 C CNN
+	1    7300 4300
+	1    0    0    -1  
+$EndComp
+Text GLabel 7000 4200 0    50   Input ~ 0
+NOSELOCK
+Text GLabel 7000 4300 0    50   Input ~ 0
+SERVOPWR
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0104
+U 1 1 5C4909B7
+P 7000 4500
+F 0 "#U0104" H 7050 4550 50  0001 C CNN
+F 1 "GND" H 7078 4536 42  0000 L CNN
+F 2 "" H 7000 4500 50  0001 C CNN
+F 3 "" H 7000 4500 50  0001 C CNN
+	1    7000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M4
+U 1 1 5C4909EA
+P 7300 4800
+F 0 "M4" H 7631 4865 50  0000 L CNN
+F 1 "EyeMouthServo" H 7631 4774 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7300 4610 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 7300 4610 50  0001 C CNN
+	1    7300 4800
+	1    0    0    -1  
+$EndComp
+Text GLabel 7000 4700 0    50   Input ~ 0
+EYEMOUTHLOCK
+Text GLabel 7000 4800 0    50   Input ~ 0
+SERVOPWR
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0105
+U 1 1 5C4909F3
+P 7000 5000
+F 0 "#U0105" H 7050 5050 50  0001 C CNN
+F 1 "GND" H 7078 5036 42  0000 L CNN
+F 2 "" H 7000 5000 50  0001 C CNN
+F 3 "" H 7000 5000 50  0001 C CNN
+	1    7000 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M5
+U 1 1 5C490A85
+P 7300 5250
+F 0 "M5" H 7631 5315 50  0000 L CNN
+F 1 "VoiceMouthServo" H 7631 5224 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7300 5060 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 7300 5060 50  0001 C CNN
+	1    7300 5250
+	1    0    0    -1  
+$EndComp
+Text GLabel 7000 5150 0    50   Input ~ 0
+VOICEMOUTHLOCK
+Text GLabel 7000 5250 0    50   Input ~ 0
+SERVOPWR
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0106
+U 1 1 5C490A8E
+P 7000 5450
+F 0 "#U0106" H 7050 5500 50  0001 C CNN
+F 1 "GND" H 7078 5486 42  0000 L CNN
+F 2 "" H 7000 5450 50  0001 C CNN
+F 3 "" H 7000 5450 50  0001 C CNN
+	1    7000 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M6
+U 1 1 5C490AC9
+P 7300 5700
+F 0 "M6" H 7632 5765 50  0000 L CNN
+F 1 "ScaleMouthServo" H 7632 5674 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7300 5510 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 7300 5510 50  0001 C CNN
+	1    7300 5700
+	1    0    0    -1  
+$EndComp
+Text GLabel 7000 5600 0    50   Input ~ 0
+SCALEMOUTHLOCK
+Text GLabel 7000 5700 0    50   Input ~ 0
+SERVOPWR
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0107
+U 1 1 5C490AD2
+P 7000 5900
+F 0 "#U0107" H 7050 5950 50  0001 C CNN
+F 1 "GND" H 7078 5936 42  0000 L CNN
+F 2 "" H 7000 5900 50  0001 C CNN
+F 3 "" H 7000 5900 50  0001 C CNN
+	1    7000 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M7
+U 1 1 5C490B08
+P 7300 6150
+F 0 "M7" H 7631 6215 50  0000 L CNN
+F 1 "Dial1Servo" H 7631 6124 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7300 5960 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 7300 5960 50  0001 C CNN
+	1    7300 6150
+	1    0    0    -1  
+$EndComp
+Text GLabel 7000 6050 0    50   Input ~ 0
+DIALLOCK1
+Text GLabel 7000 6150 0    50   Input ~ 0
+SERVOPWR
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0108
+U 1 1 5C490B11
+P 7000 6350
+F 0 "#U0108" H 7050 6400 50  0001 C CNN
+F 1 "GND" H 7078 6386 42  0000 L CNN
+F 2 "" H 7000 6350 50  0001 C CNN
+F 3 "" H 7000 6350 50  0001 C CNN
+	1    7000 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M8
+U 1 1 5C490B36
+P 7300 6650
+F 0 "M8" H 7631 6715 50  0000 L CNN
+F 1 "Dial2Servo" H 7631 6624 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7300 6460 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 7300 6460 50  0001 C CNN
+	1    7300 6650
+	1    0    0    -1  
+$EndComp
+Text GLabel 7000 6550 0    50   Input ~ 0
+DIALLOCK2
+Text GLabel 7000 6650 0    50   Input ~ 0
+SERVOPWR
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0109
+U 1 1 5C490B3F
+P 7000 6850
+F 0 "#U0109" H 7050 6900 50  0001 C CNN
+F 1 "GND" H 7078 6886 42  0000 L CNN
+F 2 "" H 7000 6850 50  0001 C CNN
+F 3 "" H 7000 6850 50  0001 C CNN
+	1    7000 6850
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 4250 2    50   Input ~ 0
+DIALLOCK2
+Text GLabel 5700 4750 2    50   Input ~ 0
+DIALLOCK3
+Text GLabel 5700 5150 2    50   Input ~ 0
+DIALLOCK4
+$Comp
+L Motor:Motor_Servo M11
+U 1 1 5C490E90
+P 8800 3800
+F 0 "M11" H 9131 3865 50  0000 L CNN
+F 1 "HEADSERVO2" H 9131 3774 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8800 3610 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 8800 3610 50  0001 C CNN
+	1    8800 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 8500 3700 0    50   Input ~ 0
+HEADLOCKS
+Text GLabel 8500 3800 0    50   Input ~ 0
+SERVOPWR
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0110
+U 1 1 5C490E99
+P 8500 4000
+F 0 "#U0110" H 8550 4050 50  0001 C CNN
+F 1 "GND" H 8578 4036 42  0000 L CNN
+F 2 "" H 8500 4000 50  0001 C CNN
+F 3 "" H 8500 4000 50  0001 C CNN
+	1    8500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M9
+U 1 1 5C490ED0
+P 8750 4200
+F 0 "M9" H 9081 4265 50  0000 L CNN
+F 1 "HEADSERVO3" H 9081 4174 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8750 4010 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 8750 4010 50  0001 C CNN
+	1    8750 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 8450 4100 0    50   Input ~ 0
+HEADLOCKS
+Text GLabel 8450 4200 0    50   Input ~ 0
+SERVOPWR
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0111
+U 1 1 5C490ED9
+P 8450 4400
+F 0 "#U0111" H 8500 4450 50  0001 C CNN
+F 1 "GND" H 8528 4436 42  0000 L CNN
+F 2 "" H 8450 4400 50  0001 C CNN
+F 3 "" H 8450 4400 50  0001 C CNN
+	1    8450 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0112
+U 1 1 5C490F88
+P 8450 4600
+F 0 "#U0112" H 8500 4650 50  0001 C CNN
+F 1 "GND" H 8528 4636 42  0000 L CNN
+F 2 "" H 8450 4600 50  0001 C CNN
+F 3 "" H 8450 4600 50  0001 C CNN
+	1    8450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M10
+U 1 1 5C490F8E
+P 8750 5050
+F 0 "M10" H 9081 5115 50  0000 L CNN
+F 1 "HEADSERVO4" H 9081 5024 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8750 4860 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 8750 4860 50  0001 C CNN
+	1    8750 5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 8450 4950 0    50   Input ~ 0
+HEADLOCKS
+Text GLabel 8450 5050 0    50   Input ~ 0
+SERVOPWR
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0113
+U 1 1 5C490F97
+P 8450 5250
+F 0 "#U0113" H 8500 5300 50  0001 C CNN
+F 1 "GND" H 8528 5286 42  0000 L CNN
+F 2 "" H 8450 5250 50  0001 C CNN
+F 3 "" H 8450 5250 50  0001 C CNN
+	1    8450 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M12
+U 1 1 5C491983
+P 8850 6100
+F 0 "M12" H 9181 6165 50  0000 L CNN
+F 1 "Dial3Servo" H 9181 6074 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8850 5910 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 8850 5910 50  0001 C CNN
+	1    8850 6100
+	1    0    0    -1  
+$EndComp
+Text GLabel 8550 6000 0    50   Input ~ 0
+DIALLOCK3
+Text GLabel 8550 6100 0    50   Input ~ 0
+SERVOPWR
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0114
+U 1 1 5C49198C
+P 8550 6300
+F 0 "#U0114" H 8600 6350 50  0001 C CNN
+F 1 "GND" H 8628 6336 42  0000 L CNN
+F 2 "" H 8550 6300 50  0001 C CNN
+F 3 "" H 8550 6300 50  0001 C CNN
+	1    8550 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M13
+U 1 1 5C4919C0
+P 8850 6600
+F 0 "M13" H 9181 6665 50  0000 L CNN
+F 1 "Dial4Servo" H 9181 6574 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8850 6410 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 8850 6410 50  0001 C CNN
+	1    8850 6600
+	1    0    0    -1  
+$EndComp
+Text GLabel 8550 6500 0    50   Input ~ 0
+DIALLOCK4
+Text GLabel 8550 6600 0    50   Input ~ 0
+SERVOPWR
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0115
+U 1 1 5C4919C9
+P 8550 6800
+F 0 "#U0115" H 8600 6850 50  0001 C CNN
+F 1 "GND" H 8628 6836 42  0000 L CNN
+F 2 "" H 8550 6800 50  0001 C CNN
+F 3 "" H 8550 6800 50  0001 C CNN
+	1    8550 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Magnetic:A1101ELHL U3
+U 1 1 5C4992F4
+P 450 6850
+F 0 "U3" H 220 6896 50  0000 R CNN
+F 1 "OuterHall" H 220 6805 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 450 6500 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/allegro-microsystems,-llc/A3212EUA-T/620-1040-ND/1006615&?gclid=CjwKCAiAsoviBRAoEiwATm8OYJxTmDhcnkNcm4XGu__A3za6K44RTaWqb3V9fHKKkz8lsoawJG9kfRoC0kgQAvD_BwE" H 450 7500 50  0001 C CNN
+	1    450  6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0124
+U 1 1 5C4995C5
+P 350 6450
+F 0 "#PWR0124" H 350 6300 50  0001 C CNN
+F 1 "+3.3V" H 365 6623 50  0000 C CNN
+F 2 "" H 350 6450 50  0001 C CNN
+F 3 "" H 350 6450 50  0001 C CNN
+	1    350  6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0116
+U 1 1 5C499624
+P 350 7350
+F 0 "#U0116" H 400 7400 50  0001 C CNN
+F 1 "GND" H 428 7386 42  0000 L CNN
+F 2 "" H 350 7350 50  0001 C CNN
+F 3 "" H 350 7350 50  0001 C CNN
+	1    350  7350
+	1    0    0    -1  
+$EndComp
+Text GLabel 750  6850 2    50   Input ~ 0
+OUTERHALL
+$Comp
+L Sensor_Magnetic:A1101ELHL U6
+U 1 1 5C49A4C3
+P 1500 6650
+F 0 "U6" H 1270 6696 50  0000 R CNN
+F 1 "MidHall" H 1270 6605 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 1500 6300 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/allegro-microsystems,-llc/A3212EUA-T/620-1040-ND/1006615&?gclid=CjwKCAiAsoviBRAoEiwATm8OYJxTmDhcnkNcm4XGu__A3za6K44RTaWqb3V9fHKKkz8lsoawJG9kfRoC0kgQAvD_BwE" H 1500 7300 50  0001 C CNN
+	1    1500 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0125
+U 1 1 5C49A4CA
+P 1400 6250
+F 0 "#PWR0125" H 1400 6100 50  0001 C CNN
+F 1 "+3.3V" H 1415 6423 50  0000 C CNN
+F 2 "" H 1400 6250 50  0001 C CNN
+F 3 "" H 1400 6250 50  0001 C CNN
+	1    1400 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0117
+U 1 1 5C49A4D0
+P 1400 7150
+F 0 "#U0117" H 1450 7200 50  0001 C CNN
+F 1 "GND" H 1478 7186 42  0000 L CNN
+F 2 "" H 1400 7150 50  0001 C CNN
+F 3 "" H 1400 7150 50  0001 C CNN
+	1    1400 7150
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 6650 2    50   Input ~ 0
+MIDHALL
+$Comp
+L Sensor_Magnetic:A1101ELHL U8
+U 1 1 5C49A6E5
+P 2500 6800
+F 0 "U8" H 2270 6846 50  0000 R CNN
+F 1 "InnerHall" H 2270 6755 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2500 6450 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/allegro-microsystems,-llc/A3212EUA-T/620-1040-ND/1006615&?gclid=CjwKCAiAsoviBRAoEiwATm8OYJxTmDhcnkNcm4XGu__A3za6K44RTaWqb3V9fHKKkz8lsoawJG9kfRoC0kgQAvD_BwE" H 2500 7450 50  0001 C CNN
+	1    2500 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0126
+U 1 1 5C49A6EC
+P 2400 6400
+F 0 "#PWR0126" H 2400 6250 50  0001 C CNN
+F 1 "+3.3V" H 2415 6573 50  0000 C CNN
+F 2 "" H 2400 6400 50  0001 C CNN
+F 3 "" H 2400 6400 50  0001 C CNN
+	1    2400 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0118
+U 1 1 5C49A6F2
+P 2400 7300
+F 0 "#U0118" H 2450 7350 50  0001 C CNN
+F 1 "GND" H 2478 7336 42  0000 L CNN
+F 2 "" H 2400 7300 50  0001 C CNN
+F 3 "" H 2400 7300 50  0001 C CNN
+	1    2400 7300
+	1    0    0    -1  
+$EndComp
+Text GLabel 2800 6800 2    50   Input ~ 0
+INNERHALL
+Text GLabel 1200 900  0    50   Input ~ 0
+SERVOPWR
+$Comp
+L power:+7.5V #PWR0127
+U 1 1 5C49FA51
+P 1200 900
+F 0 "#PWR0127" H 1200 750 50  0001 C CNN
+F 1 "+7.5V" V 1215 1028 50  0000 L CNN
+F 2 "" H 1200 900 50  0001 C CNN
+F 3 "" H 1200 900 50  0001 C CNN
+	1    1200 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensor_Magnetic:A1101ELHL U5
+U 1 1 5C4A2C9F
+P 1000 7700
+F 0 "U5" H 770 7746 50  0000 R CNN
+F 1 "FACEPART1" H 770 7655 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 1000 7350 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/allegro-microsystems,-llc/A3212EUA-T/620-1040-ND/1006615&?gclid=CjwKCAiAsoviBRAoEiwATm8OYJxTmDhcnkNcm4XGu__A3za6K44RTaWqb3V9fHKKkz8lsoawJG9kfRoC0kgQAvD_BwE" H 1000 8350 50  0001 C CNN
+	1    1000 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0128
+U 1 1 5C4A2CA6
+P 900 7300
+F 0 "#PWR0128" H 900 7150 50  0001 C CNN
+F 1 "+3.3V" H 915 7473 50  0000 C CNN
+F 2 "" H 900 7300 50  0001 C CNN
+F 3 "" H 900 7300 50  0001 C CNN
+	1    900  7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0119
+U 1 1 5C4A2CAC
+P 900 8200
+F 0 "#U0119" H 950 8250 50  0001 C CNN
+F 1 "GND" H 978 8236 42  0000 L CNN
+F 2 "" H 900 8200 50  0001 C CNN
+F 3 "" H 900 8200 50  0001 C CNN
+	1    900  8200
+	1    0    0    -1  
+$EndComp
+Text GLabel 1300 7700 2    50   Input ~ 0
+FACEPART1
+$Comp
+L Sensor_Magnetic:A1101ELHL U7
+U 1 1 5C4A3179
+P 2050 7550
+F 0 "U7" H 1820 7596 50  0000 R CNN
+F 1 "FACEPART2" H 1820 7505 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2050 7200 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/allegro-microsystems,-llc/A3212EUA-T/620-1040-ND/1006615&?gclid=CjwKCAiAsoviBRAoEiwATm8OYJxTmDhcnkNcm4XGu__A3za6K44RTaWqb3V9fHKKkz8lsoawJG9kfRoC0kgQAvD_BwE" H 2050 8200 50  0001 C CNN
+	1    2050 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0129
+U 1 1 5C4A3180
+P 1950 7150
+F 0 "#PWR0129" H 1950 7000 50  0001 C CNN
+F 1 "+3.3V" H 1965 7323 50  0000 C CNN
+F 2 "" H 1950 7150 50  0001 C CNN
+F 3 "" H 1950 7150 50  0001 C CNN
+	1    1950 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0120
+U 1 1 5C4A3186
+P 1950 8050
+F 0 "#U0120" H 2000 8100 50  0001 C CNN
+F 1 "GND" H 2028 8086 42  0000 L CNN
+F 2 "" H 1950 8050 50  0001 C CNN
+F 3 "" H 1950 8050 50  0001 C CNN
+	1    1950 8050
+	1    0    0    -1  
+$EndComp
+Text GLabel 2350 7550 2    50   Input ~ 0
+FACEPART2
+$Comp
+L Sensor_Magnetic:A1101ELHL U9
+U 1 1 5C4A3278
+P 3400 7650
+F 0 "U9" H 3170 7696 50  0000 R CNN
+F 1 "FACEPART3" H 3170 7605 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3400 7300 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/allegro-microsystems,-llc/A3212EUA-T/620-1040-ND/1006615&?gclid=CjwKCAiAsoviBRAoEiwATm8OYJxTmDhcnkNcm4XGu__A3za6K44RTaWqb3V9fHKKkz8lsoawJG9kfRoC0kgQAvD_BwE" H 3400 8300 50  0001 C CNN
+	1    3400 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0130
+U 1 1 5C4A327F
+P 3300 7250
+F 0 "#PWR0130" H 3300 7100 50  0001 C CNN
+F 1 "+3.3V" H 3315 7423 50  0000 C CNN
+F 2 "" H 3300 7250 50  0001 C CNN
+F 3 "" H 3300 7250 50  0001 C CNN
+	1    3300 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0121
+U 1 1 5C4A3285
+P 3300 8150
+F 0 "#U0121" H 3350 8200 50  0001 C CNN
+F 1 "GND" H 3378 8186 42  0000 L CNN
+F 2 "" H 3300 8150 50  0001 C CNN
+F 3 "" H 3300 8150 50  0001 C CNN
+	1    3300 8150
+	1    0    0    -1  
+$EndComp
+Text GLabel 3700 7650 2    50   Input ~ 0
+FACEPART3
+$Comp
+L Sensor_Magnetic:A1101ELHL U10
+U 1 1 5C4A3361
+P 4450 7450
+F 0 "U10" H 4220 7496 50  0000 R CNN
+F 1 "FACEPART4" H 4220 7405 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4450 7100 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/allegro-microsystems,-llc/A3212EUA-T/620-1040-ND/1006615&?gclid=CjwKCAiAsoviBRAoEiwATm8OYJxTmDhcnkNcm4XGu__A3za6K44RTaWqb3V9fHKKkz8lsoawJG9kfRoC0kgQAvD_BwE" H 4450 8100 50  0001 C CNN
+	1    4450 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0131
+U 1 1 5C4A3368
+P 4350 7050
+F 0 "#PWR0131" H 4350 6900 50  0001 C CNN
+F 1 "+3.3V" H 4365 7223 50  0000 C CNN
+F 2 "" H 4350 7050 50  0001 C CNN
+F 3 "" H 4350 7050 50  0001 C CNN
+	1    4350 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0122
+U 1 1 5C4A336E
+P 4350 7950
+F 0 "#U0122" H 4400 8000 50  0001 C CNN
+F 1 "GND" H 4428 7986 42  0000 L CNN
+F 2 "" H 4350 7950 50  0001 C CNN
+F 3 "" H 4350 7950 50  0001 C CNN
+	1    4350 7950
+	1    0    0    -1  
+$EndComp
+Text GLabel 4750 7450 2    50   Input ~ 0
+FACEPART4
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5C4A72D5
+P 1150 350
+F 0 "J1" H 1230 342 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 1230 251 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 1150 350 50  0001 C CNN
+F 3 "~" H 1150 350 50  0001 C CNN
+	1    1150 350 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+7.5V #PWR0132
+U 1 1 5C4A73DB
+P 950 350
+F 0 "#PWR0132" H 950 200 50  0001 C CNN
+F 1 "+7.5V" V 965 478 50  0000 L CNN
+F 2 "" H 950 350 50  0001 C CNN
+F 3 "" H 950 350 50  0001 C CNN
+	1    950  350 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0123
+U 1 1 5C4A74BD
+P 950 550
+F 0 "#U0123" H 1000 600 50  0001 C CNN
+F 1 "GND" H 1028 586 42  0000 L CNN
+F 2 "" H 950 550 50  0001 C CNN
+F 3 "" H 950 550 50  0001 C CNN
+	1    950  550 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CustomParts:UBEC U4
+U 1 1 5C4ABF9E
+P 1000 1550
+F 0 "U4" H 1050 2075 50  0000 C CNN
+F 1 "UBEC" H 1050 1984 50  0000 C CNN
+F 2 "teensy:UBEC" H 1050 1600 50  0001 C CNN
+F 3 "" H 1050 1600 50  0001 C CNN
+	1    1000 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+7.5V #PWR0133
+U 1 1 5C4AC130
+P 1600 1250
+F 0 "#PWR0133" H 1600 1100 50  0001 C CNN
+F 1 "+7.5V" H 1615 1423 50  0000 C CNN
+F 2 "" H 1600 1250 50  0001 C CNN
+F 3 "" H 1600 1250 50  0001 C CNN
+	1    1600 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0124
+U 1 1 5C4AC19F
+P 1600 1450
+F 0 "#U0124" H 1650 1500 50  0001 C CNN
+F 1 "GND" H 1678 1486 42  0000 L CNN
+F 2 "" H 1600 1450 50  0001 C CNN
+F 3 "" H 1600 1450 50  0001 C CNN
+	1    1600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:5.0V #U0125
+U 1 1 5C4AC20E
+P 500 1150
+F 0 "#U0125" H 550 1200 50  0001 C CNN
+F 1 "5.0V" H 578 1114 42  0000 L CNN
+F 2 "" H 500 1150 50  0001 C CNN
+F 3 "" H 500 1150 50  0001 C CNN
+	1    500  1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0126
+U 1 1 5C4AC27D
+P 500 1450
+F 0 "#U0126" H 550 1500 50  0001 C CNN
+F 1 "GND" H 578 1486 42  0000 L CNN
+F 2 "" H 500 1450 50  0001 C CNN
+F 3 "" H 500 1450 50  0001 C CNN
+	1    500  1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:5.0V #U0127
+U 1 1 5C4ADC37
+P 3350 5000
+F 0 "#U0127" H 3400 5050 50  0001 C CNN
+F 1 "5.0V" V 3350 5069 42  0000 L CNN
+F 2 "" H 3350 5000 50  0001 C CNN
+F 3 "" H 3350 5000 50  0001 C CNN
+	1    3350 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 5C4B54B0
+P 4400 1250
+F 0 "SW6" H 4400 1535 50  0000 C CNN
+F 1 "PUZZLE_RESET" H 4400 1444 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4400 1450 50  0001 C CNN
+F 3 "" H 4400 1450 50  0001 C CNN
+	1    4400 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0128
+U 1 1 5C4B5625
+P 4600 1350
+F 0 "#U0128" H 4650 1400 50  0001 C CNN
+F 1 "GND" H 4678 1386 42  0000 L CNN
+F 2 "" H 4600 1350 50  0001 C CNN
+F 3 "" H 4600 1350 50  0001 C CNN
+	1    4600 1350
+	1    0    0    -1  
+$EndComp
+Text GLabel 4200 1250 0    50   Input ~ 0
+PUZZLERESETBTN
+Text GLabel -450 2350 0    50   Input ~ 0
+PUZZLERESETBTN
+$Comp
+L Device:R_PHOTO R1
+U 1 1 5C4BC443
+P 6750 7350
+F 0 "R1" H 6820 7396 50  0000 L CNN
+F 1 "EYE1Photo" H 6820 7305 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 6800 7100 50  0001 L CNN
+F 3 "~" H 6750 7300 50  0001 C CNN
+	1    6750 7350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6900 7350 7200 7350
+$Comp
+L power:+3.3V #PWR0134
+U 1 1 5C4BDAF7
+P 6600 7350
+F 0 "#PWR0134" H 6600 7200 50  0001 C CNN
+F 1 "+3.3V" V 6615 7478 50  0000 L CNN
+F 2 "" H 6600 7350 50  0001 C CNN
+F 3 "" H 6600 7350 50  0001 C CNN
+	1    6600 7350
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7050 7350 1    50   Input ~ 0
+EYE1
+$Comp
+L Device:R_US R3
+U 1 1 5C4BDECB
+P 7350 7350
+F 0 "R3" V 7145 7350 50  0000 C CNN
+F 1 "10K" V 7236 7350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 7390 7340 50  0001 C CNN
+F 3 "~" H 7350 7350 50  0001 C CNN
+	1    7350 7350
+	0    1    1    0   
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0129
+U 1 1 5C4BDFAF
+P 7500 7450
+F 0 "#U0129" H 7550 7500 50  0001 C CNN
+F 1 "GND" H 7578 7486 42  0000 L CNN
+F 2 "" H 7500 7450 50  0001 C CNN
+F 3 "" H 7500 7450 50  0001 C CNN
+	1    7500 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_PHOTO R2
+U 1 1 5C4BE306
+P 6900 7850
+F 0 "R2" V 7107 7850 50  0000 C CNN
+F 1 "EYE2Photo" V 7016 7850 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 6950 7600 50  0001 L CNN
+F 3 "~" H 6900 7800 50  0001 C CNN
+	1    6900 7850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 7850 7350 7850
+$Comp
+L power:+3.3V #PWR0135
+U 1 1 5C4BE30E
+P 6750 7850
+F 0 "#PWR0135" H 6750 7700 50  0001 C CNN
+F 1 "+3.3V" V 6765 7978 50  0000 L CNN
+F 2 "" H 6750 7850 50  0001 C CNN
+F 3 "" H 6750 7850 50  0001 C CNN
+	1    6750 7850
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7200 7850 1    50   Input ~ 0
+EYE2
+$Comp
+L Device:R_US R4
+U 1 1 5C4BE315
+P 7500 7850
+F 0 "R4" V 7295 7850 50  0000 C CNN
+F 1 "10K" V 7386 7850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 7540 7840 50  0001 C CNN
+F 3 "~" H 7500 7850 50  0001 C CNN
+	1    7500 7850
+	0    1    1    0   
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0130
+U 1 1 5C4BE31C
+P 7650 7950
+F 0 "#U0130" H 7700 8000 50  0001 C CNN
+F 1 "GND" H 7728 7986 42  0000 L CNN
+F 2 "" H 7650 7950 50  0001 C CNN
+F 3 "" H 7650 7950 50  0001 C CNN
+	1    7650 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M14
+U 1 1 5C4C8D6F
+P 10200 3150
+F 0 "M14" H 10532 3215 50  0000 L CNN
+F 1 "SCALE1Servo" H 10532 3124 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 10200 2960 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 10200 2960 50  0001 C CNN
+	1    10200 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 9900 3050 0    50   Input ~ 0
+SCALE1MOTOR
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:5.0V #U0131
+U 1 1 5C4CCFD8
+P 9250 3150
+F 0 "#U0131" H 9300 3200 50  0001 C CNN
+F 1 "5.0V" H 9367 3114 42  0000 C CNN
+F 2 "" H 9250 3150 50  0001 C CNN
+F 3 "" H 9250 3150 50  0001 C CNN
+	1    9250 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9900 3150 9350 3150
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0132
+U 1 1 5C4CD242
+P 9900 3350
+F 0 "#U0132" H 9950 3400 50  0001 C CNN
+F 1 "GND" H 9978 3386 42  0000 L CNN
+F 2 "" H 9900 3350 50  0001 C CNN
+F 3 "" H 9900 3350 50  0001 C CNN
+	1    9900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV1
+U 1 1 5C4CD38F
+P 11150 3050
+F 0 "RV1" H 11083 3004 50  0000 R CNN
+F 1 "SCALE1POT" H 11083 3095 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 11150 3050 50  0001 C CNN
+F 3 "~" H 11150 3050 50  0001 C CNN
+	1    11150 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0136
+U 1 1 5C4D0A79
+P 11150 3200
+F 0 "#PWR0136" H 11150 3050 50  0001 C CNN
+F 1 "+3.3V" H 11165 3373 50  0000 C CNN
+F 2 "" H 11150 3200 50  0001 C CNN
+F 3 "" H 11150 3200 50  0001 C CNN
+	1    11150 3200
+	-1   0    0    1   
+$EndComp
+Text GLabel 11150 2900 2    50   Input ~ 0
+ANALOGGND
+Text GLabel 11000 3050 1    50   Input ~ 0
+SCALE1POT
+$Comp
+L Motor:Motor_Servo M15
+U 1 1 5C4D4417
+P 10250 4100
+F 0 "M15" H 10582 4165 50  0000 L CNN
+F 1 "SCALE2Servo" H 10582 4074 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 10250 3910 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 10250 3910 50  0001 C CNN
+	1    10250 4100
+	1    0    0    -1  
+$EndComp
+Text GLabel 9950 4000 0    50   Input ~ 0
+SCALE2MOTOR
+Wire Wire Line
+	9950 4100 9400 4100
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0133
+U 1 1 5C4D4420
+P 9950 4300
+F 0 "#U0133" H 10000 4350 50  0001 C CNN
+F 1 "GND" H 10028 4336 42  0000 L CNN
+F 2 "" H 9950 4300 50  0001 C CNN
+F 3 "" H 9950 4300 50  0001 C CNN
+	1    9950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV2
+U 1 1 5C4D4426
+P 11200 4000
+F 0 "RV2" H 11133 3954 50  0000 R CNN
+F 1 "SCALE2POT" H 11133 4045 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 11200 4000 50  0001 C CNN
+F 3 "~" H 11200 4000 50  0001 C CNN
+	1    11200 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0137
+U 1 1 5C4D442D
+P 11200 4150
+F 0 "#PWR0137" H 11200 4000 50  0001 C CNN
+F 1 "+3.3V" H 11215 4323 50  0000 C CNN
+F 2 "" H 11200 4150 50  0001 C CNN
+F 3 "" H 11200 4150 50  0001 C CNN
+	1    11200 4150
+	-1   0    0    1   
+$EndComp
+Text GLabel 11200 3850 2    50   Input ~ 0
+ANALOGGND
+Text GLabel 1250 3900 0    50   Input ~ 0
+SCALE2POT
+$Comp
+L CustomParts:VoiceModule U11
+U 1 1 5C4D8E66
+P 10400 5400
+F 0 "U11" H 10669 5736 50  0000 L CNN
+F 1 "VoiceModule" H 10669 5645 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10400 5500 50  0001 C CNN
+F 3 "" H 10400 5500 50  0001 C CNN
+	1    10400 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0138
+U 1 1 5C4D8FD7
+P 10300 4900
+F 0 "#PWR0138" H 10300 4750 50  0001 C CNN
+F 1 "+3.3V" H 10315 5073 50  0000 C CNN
+F 2 "" H 10300 4900 50  0001 C CNN
+F 3 "" H 10300 4900 50  0001 C CNN
+	1    10300 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 10300 5000 0    50   Input ~ 0
+VOICETX
+Text GLabel 10300 5100 0    50   Input ~ 0
+VOICERX
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0134
+U 1 1 5C4D939A
+P 10300 5300
+F 0 "#U0134" H 10350 5350 50  0001 C CNN
+F 1 "GND" H 10378 5336 42  0000 L CNN
+F 2 "" H 10300 5300 50  0001 C CNN
+F 3 "" H 10300 5300 50  0001 C CNN
+	1    10300 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 5500 2    50   Input ~ 0
+RADIOMOSI
+Text GLabel 3250 5600 2    50   Input ~ 0
+RADIOSCLK
+Text GLabel 1250 2100 0    50   Input ~ 0
+RADIOMISO
+Text GLabel 10700 6800 0    50   Input ~ 0
+RADIOMOSI
+Text GLabel 10700 6700 0    50   Input ~ 0
+RADIOMISO
+Text GLabel 10700 6600 0    50   Input ~ 0
+RADIOSCLK
+Text GLabel 1250 4800 0    50   Input ~ 0
+RADIOCSN
+Text GLabel 1250 4700 0    50   Input ~ 0
+RADIOCE
+Text GLabel 10700 6400 0    50   Input ~ 0
+RADIOCSN
+Text GLabel 10700 6500 0    50   Input ~ 0
+RADIOCE
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:GND #U0135
+U 1 1 5C4F5FFC
+P 10600 6300
+F 0 "#U0135" H 10650 6350 50  0001 C CNN
+F 1 "GND" V 10600 6231 42  0000 R CNN
+F 2 "" H 10600 6300 50  0001 C CNN
+F 3 "" H 10600 6300 50  0001 C CNN
+	1    10600 6300
+	0    1    1    0   
+$EndComp
+NoConn ~ 200  5300
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:PCA9685 U2
+U 1 1 5C485E3F
+P 4900 4550
+F 0 "U2" H 4900 5997 42  0000 C CNN
+F 1 "PCA9685" H 4900 5918 42  0000 C CNN
+F 2 "teensy:16ChannelPWM" H 4900 4550 50  0001 C CNN
+F 3 "" H 4900 4550 50  0001 C CNN
+	1    4900 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L teensy:NRF24L01Stripped U12
+U 1 1 5C50864D
+P 10700 6100
+F 0 "U12" H 10331 6469 50  0000 R CNN
+F 1 "NRF24L01Stripped" H 10331 6560 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 10700 6100 50  0001 C CNN
+F 3 "" H 10700 6100 50  0001 C CNN
+	1    10700 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0139
+U 1 1 5C508AD5
+P 10700 6200
+F 0 "#PWR0139" H 10700 6050 50  0001 C CNN
+F 1 "+3.3V" V 10715 6328 50  0000 L CNN
+F 2 "" H 10700 6200 50  0001 C CNN
+F 3 "" H 10700 6200 50  0001 C CNN
+	1    10700 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Adafruit_PCA9685_rev_C-eagle-import:5.0V #U0136
+U 1 1 5C5098CC
+P 9300 4100
+F 0 "#U0136" H 9350 4150 50  0001 C CNN
+F 1 "5.0V" H 9417 4064 42  0000 C CNN
+F 2 "" H 9300 4100 50  0001 C CNN
+F 3 "" H 9300 4100 50  0001 C CNN
+	1    9300 4100
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1250 2400 0    50   Input ~ 0
+FACEPART1
+Text GLabel 1250 5600 0    50   Input ~ 0
+FACEPART2
+Text GLabel 1250 5000 0    50   Input ~ 0
+FACEPART3
+Text GLabel 1250 4600 0    50   Input ~ 0
+FACEPART4
+$Comp
+L power:+3.3V #PWR0140
+U 1 1 5C50B2DA
+P 1250 4200
+F 0 "#PWR0140" H 1250 4050 50  0001 C CNN
+F 1 "+3.3V" V 1265 4328 50  0000 L CNN
+F 2 "" H 1250 4200 50  0001 C CNN
+F 3 "" H 1250 4200 50  0001 C CNN
+	1    1250 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0141
+U 1 1 5C50B341
+P 1250 4300
+F 0 "#PWR0141" H 1250 4050 50  0001 C CNN
+F 1 "GND" V 1255 4172 50  0000 R CNN
+F 2 "" H 1250 4300 50  0001 C CNN
+F 3 "" H 1250 4300 50  0001 C CNN
+	1    1250 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 5C50B404
+P 1250 5500
+F 0 "#PWR0142" H 1250 5250 50  0001 C CNN
+F 1 "GND" V 1255 5372 50  0000 R CNN
+F 2 "" H 1250 5500 50  0001 C CNN
+F 3 "" H 1250 5500 50  0001 C CNN
+	1    1250 5500
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
